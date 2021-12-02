@@ -1,9 +1,10 @@
 from solutions.day1.day1_solution import find_depth_increases, find_sliding_depth_increases
+from solutions.day2.day2_solution import find_horizontal_depth_multiplier
 
 
 solutions = {1: {1: find_depth_increases,
                  2: find_sliding_depth_increases},
-             2: {},
+             2: {1: find_horizontal_depth_multiplier},
              3: {},
              4: {},
              5: {},
