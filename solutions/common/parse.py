@@ -1,4 +1,4 @@
-from solutions.common.util import strings_to_integers
+from solutions.common.util import strings_to_integers, strings_to_binary
 import csv
 
 
@@ -13,3 +13,7 @@ def parse_input_as_list(puzzle_input):
 
 def parse_input_as_integer_list(puzzle_input):
     return strings_to_integers(parse_input_as_list(puzzle_input))
+
+
+def parse_input_as_binary_list(puzzle_input):
+    return strings_to_binary(parse_input_as_list(puzzle_input))

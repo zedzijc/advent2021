@@ -1,8 +1,6 @@
 def strings_to_integers(strings):
-    integers = []
-    for string in strings:
-        try:
-            integers.append(int(string))
-        except TypeError:
-            pass
-    return integers
+    return [int(string) for string in strings]
+
+
+def strings_to_binary(strings):
+    return [int(string, 2) for string in strings]

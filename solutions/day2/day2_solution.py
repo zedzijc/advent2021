@@ -10,15 +10,17 @@ def find_horizontal_depth_multiplier(puzzle_input):
 def _calculate_horizontal_depth_multiplier(raw_instructions):
     depth = 0
     horizontal_position = 0
+    aim = 0
 
     for raw_instruction in raw_instructions:
         instruction = _parse_instruction(raw_instruction)
         if instruction.direction == "up":
-            depth -= instruction.value
+            aim -= instruction.value
         elif instruction.direction == "down":
-            depth += instruction.value
+            aim += instruction.value
         elif instruction.direction == "forward":
             horizontal_position += instruction.value
+            depth += aim * instruction.value
         else:
             print("got an unsupported instruction: {0} with value {1}".format(instruction.direction, instruction.value))
     return depth * horizontal_position
