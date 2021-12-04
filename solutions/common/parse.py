@@ -17,3 +17,13 @@ def parse_input_as_integer_list(puzzle_input):
 
 def parse_input_as_binary_list(puzzle_input):
     return strings_to_binary(parse_input_as_list(puzzle_input))
+
+
+def parse_input_as_matrices(puzzle_input):
+    matrices = [[]]
+    for row in parse_input_as_list(puzzle_input):
+        if row:
+            matrices[len(matrices) - 1].append(strings_to_integers(row.split(" "))
+        else:
+            matrices.append([])
+    return matrices

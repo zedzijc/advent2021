@@ -1,7 +1,7 @@
 from solutions.day1.day1_solution import find_depth_increases, find_sliding_depth_increases
 from solutions.day2.day2_solution import find_horizontal_depth_multiplier
 from solutions.day3.day3_solution import find_power_consumption, find_life_support_rating
-
+from solutions.day4.day4_solution import play_bingo
 
 solutions = {1: {1: find_depth_increases,
                  2: find_sliding_depth_increases},
@@ -9,7 +9,7 @@ solutions = {1: {1: find_depth_increases,
                  2: find_horizontal_depth_multiplier},
              3: {1: find_power_consumption,
                  2: find_life_support_rating},
-             4: {},
+             4: {1: play_bingo},
              5: {},
              6: {},
              7: {},
