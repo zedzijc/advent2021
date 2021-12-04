@@ -6,3 +6,7 @@ class BingoNumber(object):
 
     def __eq__(self, someNumber):
         return self.number == someNumber
+
+
+def numbers_to_bingo_numbers(numbers):
+    return [BingoNumber(number) for number in numbers]

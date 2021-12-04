@@ -7,14 +7,12 @@ BINGO_NUMBERS = [15,61,32,33,87,17,56,73,27,83,0,18,43,8,86,37,40,6,93,25,14,68,
 def play_bingo(puzzle_input):
     winning_board_scores = []
     bingo_boards = _setup_boards(puzzle_input)
-    bingo = False
     for number in BINGO_NUMBERS:
         for board in bingo_boards:
             score = board.mark_number(number)
             if score:
                 winning_board_scores.append(score)
-                bingo = True
-        if bingo:
+        if winning_board_scores:
             break
     print("Winning board score: {0}".format(
         max(winning_board_scores)))
