@@ -8,10 +8,17 @@ def play_bingo(puzzle_input):
     winning_board_scores = []
     bingo_boards = _setup_boards(puzzle_input)
     for number in BINGO_NUMBERS:
-        for board in bingo_boards:
+        boards_with_bingo = []
+        for board_index, board in enumerate(bingo_boards):
             score = board.mark_number(number)
             if score:
-                winning_board_scores.append(score)
+                if len(bingo_boards) == 1:
+                    winning_board_scores.append(score)
+                else:
+                    boards_with_bingo.append(board_index)
+        boards_with_bingo.reverse()
+        for board_index in boards_with_bingo:
+            bingo_boards.pop(board_index)
         if winning_board_scores:
             break
     print("Winning board score: {0}".format(
