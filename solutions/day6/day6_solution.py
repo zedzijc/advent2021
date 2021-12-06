@@ -1,6 +1,7 @@
 from solutions.common.parse import parse_csv_to_list
 from solutions.common.util import strings_to_integers
 
+
 def model_cuttlefish(puzzle_input):
 	days = 80
 	respawn_time = 7
