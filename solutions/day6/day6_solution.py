@@ -3,7 +3,7 @@ from solutions.common.util import strings_to_integers
 
 
 def model_cuttlefish(puzzle_input):
-	days = 80
+	days = 256
 	respawn_time = 7
 	print("Number of cuttlefish after {0} days: {1}".format(
 		days, _run_cuttlefish_model(strings_to_integers(parse_csv_to_list(puzzle_input)), respawn_time, days)))
