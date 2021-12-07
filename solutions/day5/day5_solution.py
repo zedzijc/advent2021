@@ -51,7 +51,6 @@ def _get_line_coordinates(coordinate_pair):
 				line_coordinates.append(Coordinate(x,y))
 				x -= 1
 				y -= 1
-
 		elif (coord_a.x < coord_b.x and coord_a.y < coord_b.y):
 			while coord_b not in line_coordinates:
 				line_coordinates.append(Coordinate(x,y))
