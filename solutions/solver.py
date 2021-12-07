@@ -4,6 +4,7 @@ from solutions.day3.day3_solution import find_power_consumption, find_life_suppo
 from solutions.day4.day4_solution import play_bingo
 from solutions.day5.day5_solution import count_overlapping_lines
 from solutions.day6.day6_solution import model_cuttlefish
+from solutions.day7.day7_solution import find_lowest_fuel_position
 
 solutions = {1: {1: find_depth_increases,
                  2: find_sliding_depth_increases},
@@ -17,7 +18,7 @@ solutions = {1: {1: find_depth_increases,
                  2: count_overlapping_lines},
              6: {1: model_cuttlefish,
                  2: model_cuttlefish},
-             7: {},
+             7: {1: find_lowest_fuel_position},
              8: {},
              9: {},
              10: {},
