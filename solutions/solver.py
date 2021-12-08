@@ -5,6 +5,7 @@ from solutions.day4.day4_solution import play_bingo
 from solutions.day5.day5_solution import count_overlapping_lines
 from solutions.day6.day6_solution import model_cuttlefish
 from solutions.day7.day7_solution import find_lowest_fuel_position
+from solutions.day8.day8_solution import find_unique_number_occurences
 
 solutions = {1: {1: find_depth_increases,
                  2: find_sliding_depth_increases},
@@ -20,7 +21,7 @@ solutions = {1: {1: find_depth_increases,
                  2: model_cuttlefish},
              7: {1: find_lowest_fuel_position,
                  2: find_lowest_fuel_position},
-             8: {},
+             8: {1: find_unique_number_occurences},
              9: {},
              10: {},
              11: {},
