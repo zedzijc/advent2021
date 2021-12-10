@@ -6,6 +6,7 @@ from solutions.day5.day5_solution import count_overlapping_lines
 from solutions.day6.day6_solution import model_cuttlefish
 from solutions.day7.day7_solution import find_lowest_fuel_position
 from solutions.day8.day8_solution import find_unique_number_occurences, find_output_value_sums
+from solutions.day10.day10_solution import syntax_error_score
 
 solutions = {1: {1: find_depth_increases,
                  2: find_sliding_depth_increases},
@@ -24,7 +25,7 @@ solutions = {1: {1: find_depth_increases,
              8: {1: find_unique_number_occurences,
                  2: find_output_value_sums},
              9: {},
-             10: {},
+             10: {1: syntax_error_score},
              11: {},
              12: {},
              13: {},
